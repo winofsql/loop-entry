@@ -69,8 +69,8 @@ for( i = 0; i < a.length; i++  ) {
 for( value of a ) {
     console.log( value );
 }
-for( value in a ) {
-    console.log( value );
+for( index in a ) {
+    console.log( index );
 }
 ```
 ![image](https://user-images.githubusercontent.com/1501327/132113676-c3b054be-115f-42ef-af2e-b7d2032a3904.png)
