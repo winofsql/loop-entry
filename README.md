@@ -50,6 +50,9 @@ for( $i = 0; $i < count($a); $i++ ) {
 foreach ( $a as $value  ) {
     print "{$value}";
 }
+foreach ( $a as $key => $value ) {
+    print "[{$key}]:{$value}";
+}
 ```
 ## JavaScript
 ```javascript
