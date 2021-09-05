@@ -44,3 +44,18 @@ while ( iterator.hasNext() ) {
     System.out.println( String.format( "%s => %s", key, env.get( key ) ) );
 }        
 ```
+
+## Map : ソート : forEach( ラムダ式 )
+```java
+Map<String, String> env = System.getenv();
+
+// ****************************************
+// ソート
+// ****************************************
+TreeMap<String, String> tm = new TreeMap<String, String>( env );
+
+tm.forEach( (key, value) -> {
+    String out = String.format( "%s => %s", key, value );
+    System.out.println( out );
+});
+```
