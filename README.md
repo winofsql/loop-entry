@@ -74,3 +74,14 @@ for( value in a ) {
 }
 ```
 ![image](https://user-images.githubusercontent.com/1501327/132113676-c3b054be-115f-42ef-af2e-b7d2032a3904.png)
+#jQuery
+```javascript
+var a = ["AB", "CD", "EF"];
+
+$( a ).each(function( index, value ){
+	console.log( index + " : " + value )
+});
+$.each( a, function(index,value){
+	console.log( index + " : " + value )
+});
+```
