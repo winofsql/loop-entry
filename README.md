@@ -9,7 +9,7 @@ for( String value: a ) {
     System.out.print(value);
 }
 Arrays.asList(a).forEach(
-    (value)->{
+    (value) -> {
             System.out.print(value); 
     }
 );                
