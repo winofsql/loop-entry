@@ -28,6 +28,11 @@ for( int i = 0; i < a.Length; i++ ) {
 foreach (string value in a) {
     Console.Write($"{value}");
 }
+Array.ForEach(a, new Action<string>(
+    (value) => {
+        Console.Write($"{value}");
+    }
+));
 new List<string>(a).ForEach(
     (value) => {
         Console.Write($"{value}");
