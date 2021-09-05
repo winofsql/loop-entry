@@ -8,6 +8,11 @@ for( int i = 0; i < a.length; i++ ) {
 for( String value: a ) {
     System.out.print(value);
 }
+Arrays.asList(a).forEach(
+    (value)->{
+            System.out.print(value); 
+    }
+);                
 ```
 ## C#
 ```cs
