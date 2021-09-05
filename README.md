@@ -2,6 +2,7 @@
 ## Java
 ```java
 String[] a = {"AB-", "CD-", "EF\n"};
+
 for( int i = 0; i < a.length; i++ ) {
     System.out.print(a[i]);
 }
@@ -17,6 +18,7 @@ Arrays.asList(a).forEach(
 ## C#
 ```cs
 string[] a = {"AB-", "CD-", "EF\n"};
+
 for( int i = 0; i < a.Length; i++ ) {
     Console.Write(a[i]);
 }
@@ -27,6 +29,7 @@ foreach (string value in a) {
 ## PHP
 ```php
 $a = ["AB-", "CD-", "EF\n"];
+
 for( $i = 0; $i < count($a); $i++ ) {
     print "{$a[$i]}";
 }
@@ -37,6 +40,7 @@ foreach ( $a as $value  ) {
 ## JavaScript
 ```javascript
 var a = ["AB", "CD", "EF"];
+
 for( i = 0; i < a.length; i++  ) {
     console.log( a[i] );
 }
