@@ -45,7 +45,7 @@ while ( iterator.hasNext() ) {
 }        
 ```
 
-## Map : ソート : forEach( ラムダ式 )
+## Map( 環境変数 ) : ソート : forEach( ラムダ式 )
 ```java
 Map<String, String> env = System.getenv();
 
