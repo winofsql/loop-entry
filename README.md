@@ -1,36 +1,44 @@
 # loop-entry
 ## Java
 ```java
-String[] a = {"AB-", "CD-", "EF"};
+String[] a = {"AB-", "CD-", "EF\n"};
 for( int i = 0; i < a.length; i++ ) {
-    System.out.println(a[i]);
+    System.out.print(a[i]);
 }
 for( String value: a ) {
-    System.out.println(value);
+    System.out.print(value);
 }
 ```
 ## C#
 ```cs
-string[] a = {"AB-", "CD-", "EF"};
+string[] a = {"AB-", "CD-", "EF\n"};
 for( int i = 0; i < a.Length; i++ ) {
-    Console.WriteLine(a[i]);
+    Console.Write(a[i]);
+}
+foreach (string value in a) {
+    Console.Write($"{value}");
 }
 ```
 ## PHP
 ```php
-$a = ["AB-", "CD-", "EF"];
-for( $i = 0; $i < count($i); $i++ ) {
-    print "{$a[$i]}\n";
+$a = ["AB-", "CD-", "EF\n"];
+for( $i = 0; $i < count($a); $i++ ) {
+    print "{$a[$i]}";
 }
 foreach ( $a as $value  ) {
-    print "{$value}\n";
+    print "{$value}";
 }
 ```
-
 ## JavaScript
 ```javascript
-var a = ["AB-", "CD-", "EF"];
+var a = ["AB", "CD", "EF"];
 for( i = 0; i < a.length; i++  ) {
     console.log( a[i] );
+}
+for( value of a ) {
+    console.log( value );
+}
+for( value in a ) {
+    console.log( value );
 }
 ```
