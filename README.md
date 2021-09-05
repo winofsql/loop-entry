@@ -42,3 +42,4 @@ for( value in a ) {
     console.log( value );
 }
 ```
+![image](https://user-images.githubusercontent.com/1501327/132113676-c3b054be-115f-42ef-af2e-b7d2032a3904.png)
