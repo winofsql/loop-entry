@@ -23,3 +23,17 @@ for( int i = 0; i < keys.length; i++ ) {
     System.out.println( String.format( "%s => %s", keys[i], env.get( keys[i] ) ) );
 }
 ```
+
+## Map : ソート : iterator : while
+```java
+Map<String, String> env = System.getenv();
+TreeMap<String, String> tm = new TreeMap<String, String>( env );
+
+Iterator<String> iterator = tm.keySet().iterator();
+
+String key;
+while ( iterator.hasNext() ) {
+    key = iterator.next();
+    System.out.println( String.format( "%s => %s", key, env.get( key ) ) );
+}        
+```
