@@ -54,6 +54,11 @@ foreach ( $a as $key => $value ) {
     print "[{$key}]:{$value}";
 }
 ```
+```
+AB-CD-EF
+AB-CD-EF
+[0]:AB-[1]:CD-[2]:EF
+```
 ## JavaScript
 ```javascript
 var a = ["AB", "CD", "EF"];
