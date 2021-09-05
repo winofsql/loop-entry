@@ -24,7 +24,7 @@ for( int i = 0; i < keys.length; i++ ) {
 }
 ```
 
-## Map : ソート : iterator : while
+## Map : 環境変数 : ソート : iterator : while
 ```java
 Map<String, String> env = System.getenv();
 TreeMap<String, String> tm = new TreeMap<String, String>( env );
