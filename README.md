@@ -14,7 +14,7 @@ for( String value: Arrays.asList(a) ) {
 }
 Arrays.asList(a).forEach(
     (value) -> {
-            System.out.print(value); 
+        System.out.print(value); 
     }
 );                
 ```
@@ -79,9 +79,9 @@ for( value in a ) {
 var a = ["AB", "CD", "EF"];
 
 $( a ).each(function( index, value ){
-	console.log( index + " : " + value )
+    console.log( index + " : " + value )
 });
 $.each( a, function(index,value){
-	console.log( index + " : " + value )
+    console.log( index + " : " + value )
 });
 ```
