@@ -24,7 +24,7 @@ for( int i = 0; i < keys.Length; i++ ) {
     Console.WriteLine($"{keys[i]} => {env[keys[i]]}");
 }        
 ```
-## 
+## IDictionary( 環境変数 ) : ソート( SortedDictionary<string, string> ) : foreach
 ```cs
 // ****************************************
 // Collections
