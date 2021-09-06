@@ -24,3 +24,28 @@ for( int i = 0; i < keys.Length; i++ ) {
     Console.WriteLine($"{keys[i]} => {env[keys[i]]}");
 }        
 ```
+## 
+```cs
+// ****************************************
+// Collections
+// ****************************************
+IDictionary env = Environment.GetEnvironmentVariables();
+
+// ****************************************
+// Collections.Generic
+// ****************************************
+SortedDictionary<string, string> sd = new SortedDictionary<string, string>();
+
+// ****************************************
+// SortedDictionary に追加
+// ****************************************
+foreach (string key in env.Keys) {
+    sd.Add(key, env[key].ToString());
+}
+// ****************************************
+// SortedDictionary から表示
+// ****************************************
+foreach (string key in sd.Keys) {
+    Console.WriteLine($"{key} => {sd[key]}");
+}
+```
