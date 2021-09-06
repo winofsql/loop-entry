@@ -1,3 +1,4 @@
+## IDictionary( 環境変数 ) : 配列 : ソート : for
 ```cs
 IDictionary env = Environment.GetEnvironmentVariables();
 
