@@ -50,7 +50,7 @@ foreach (string key in sd.Keys) {
 }
 ```
 
-##
+## IDictionary( 環境変数 ) : ループ( IEnumerator ) : while
 ```cs
 IDictionary env = Environment.GetEnvironmentVariables();
 
