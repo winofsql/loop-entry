@@ -40,6 +40,15 @@ new List<string>(a).ForEach(
     }
 );
 
+string[] b = {"99", "88", "AA"};
+
+List<string> list = new List<string>(b);
+list.Sort();
+list.ForEach(
+    (value) => {
+        Console.Write($"{value}");
+    }
+);
 ```
 ## PHP
 ```php
