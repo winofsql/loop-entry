@@ -49,3 +49,16 @@ foreach (string key in sd.Keys) {
     Console.WriteLine($"{key} => {sd[key]}");
 }
 ```
+
+##
+```cs
+IDictionary env = Environment.GetEnvironmentVariables();
+
+IEnumerable iemu = env;
+IEnumerator iemu_loop = iemu.GetEnumerator();
+DictionaryEntry de;
+while( iemu_loop.MoveNext() ) {
+    de = (DictionaryEntry)iemu_loop.Current;
+    System.Console.WriteLine($"{de.Key} => {de.Value}");
+}
+```
