@@ -79,3 +79,11 @@ while( iemu_loop.MoveNext() ) {
     System.Console.WriteLine($"{kvp.Key} => {kvp.Value}");
 }
 ```
+```
+[A, X]
+System.Collections.Generic.KeyValuePair`2[System.String,System.String]
+A => X
+[B, Y]
+System.Collections.Generic.KeyValuePair`2[System.String,System.String]
+B => Y
+```
