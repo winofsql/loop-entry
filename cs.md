@@ -62,3 +62,20 @@ while( iemu_loop.MoveNext() ) {
     System.Console.WriteLine($"{de.Key} => {de.Value}");
 }
 ```
+
+## Dictionary( クラス ) : ループ( IEnumerator ) : while
+```cs
+Dictionary<string,string> idic = new Dictionary<string,string>();
+idic.Add("A","X");
+idic.Add("B","Y");
+
+IEnumerable iemu = idic;
+IEnumerator iemu_loop = iemu.GetEnumerator();
+KeyValuePair<string,string> kvp;
+while( iemu_loop.MoveNext() ) {
+    kvp = (KeyValuePair<string,string>)iemu_loop.Current;
+    System.Console.WriteLine( iemu_loop.Current );
+    System.Console.WriteLine( iemu_loop.Current.GetType() );
+    System.Console.WriteLine($"{kvp.Key} => {kvp.Value}");
+}
+```
